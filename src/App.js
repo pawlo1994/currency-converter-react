@@ -2,6 +2,7 @@ import './App.css';
 import Header from "./Header";
 import Main from "./Main";
 import List from "./List";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -21,8 +22,7 @@ function App() {
         </form>
         <List />
       </Main>
-      <footer className="footer">Copyright &copy; Paweł Suchy 2021
-    </footer>
+      <Footer footerContent="Copyright &copy; Paweł Suchy 2021" />
     </>
   );
 }
