@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="header">
+        <h1 className="header__title">Suchy kantor</h1>
       </header>
-    </div>
+      <main className="main js-main">
+        <form className="form js-form">
+          <fieldset className="fieldset">
+            <legend className="fieldset__legend">Przelicznik walut</legend>
+                Pola oznaczone "*" są wymagane
+                <p className="form__field"><label for="pln" className="form__label">PLN*:</label> <input type="number"
+              className="form__input js-form__input--pln" name="pln" id="pln" step="0.01" min="0.05"
+              max="9999999999" value="" required /></p>
+            <button className="main__button js-convertButton">Przelicz</button>
+            <ul className="fieldset__list">
+              <li className="fieldset__item">EUR: <span className="fieldset__span js-eur__value">---</span></li>
+              <li className="fieldset__item">USD: <span className="fieldset__span js-usd__value">---</span></li>
+              <li className="fieldset__item">CHF: <span className="fieldset__span js-chf__value">---</span></li>
+            </ul>
+          </fieldset>
+        </form>
+      </main>
+      <footer className="footer">Copyright &copy; Paweł Suchy 2021
+    </footer>
+    </>
   );
 }
 
