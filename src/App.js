@@ -1,11 +1,12 @@
 import './App.css';
 import Header from "./Header";
+import Main from "./Main";
 
 function App() {
   return (
     <>
       <Header headerContent="Suchy kantor" />
-      <main className="main">
+      <Main>
         <form className="form">
           <h2 className="form__header">Przelicznik walut</h2>
                 Pola oznaczone "*" są wymagane
@@ -22,7 +23,7 @@ function App() {
           <li className="currencyList__item">USD: <span className="currencyList__span">---</span></li>
           <li className="currencyList__item">CHF: <span className="currencyList__span">---</span></li>
         </ul>
-      </main>
+      </Main>
       <footer className="footer">Copyright &copy; Paweł Suchy 2021
     </footer>
     </>
