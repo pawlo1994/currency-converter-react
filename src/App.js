@@ -1,11 +1,10 @@
 import './App.css';
+import Header from "./Header";
 
 function App() {
   return (
     <>
-      <header className="header">
-        <h1 className="header__title">Suchy kantor</h1>
-      </header>
+      <Header headerContent="Suchy kantor" />
       <main className="main js-main">
         <form className="form js-form">
           <fieldset className="fieldset">
