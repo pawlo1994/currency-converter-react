@@ -5,22 +5,23 @@ function App() {
   return (
     <>
       <Header headerContent="Suchy kantor" />
-      <main className="main js-main">
-        <form className="form js-form">
-          <fieldset className="fieldset">
-            <legend className="fieldset__legend">Przelicznik walut</legend>
+      <main className="main">
+        <form className="form">
+          <h2 className="form__header">Przelicznik walut</h2>
                 Pola oznaczone "*" są wymagane
-                <p className="form__field"><label for="pln" className="form__label">PLN*:</label> <input type="number"
-              className="form__input js-form__input--pln" name="pln" id="pln" step="0.01" min="0.05"
-              max="9999999999" value="" required /></p>
-            <button className="main__button js-convertButton">Przelicz</button>
-            <ul className="fieldset__list">
-              <li className="fieldset__item">EUR: <span className="fieldset__span js-eur__value">---</span></li>
-              <li className="fieldset__item">USD: <span className="fieldset__span js-usd__value">---</span></li>
-              <li className="fieldset__item">CHF: <span className="fieldset__span js-chf__value">---</span></li>
-            </ul>
-          </fieldset>
+                <p className="form__field">
+            <label for="pln" className="form__label">PLN*:</label>
+            <input type="number"
+              className="form__input" name="pln" id="pln" step="0.01" min="0.05"
+              max="9999999999" value="" required />
+          </p>
+          <button className="form__button">Przelicz</button>
         </form>
+        <ul className="currencyList">
+          <li className="currencyList__item">EUR: <span className="currencyList__span">---</span></li>
+          <li className="currencyList__item">USD: <span className="currencyList__span">---</span></li>
+          <li className="currencyList__item">CHF: <span className="currencyList__span">---</span></li>
+        </ul>
       </main>
       <footer className="footer">Copyright &copy; Paweł Suchy 2021
     </footer>
