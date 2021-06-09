@@ -3,23 +3,14 @@ import Header from "./Header";
 import Main from "./Main";
 import List from "./List";
 import Footer from "./Footer";
+import Form from "./Form";
 
 function App() {
   return (
     <>
       <Header headerContent="Suchy kantor" />
-      <Main>
-        <form className="form">
-          <h2 className="form__header">Przelicznik walut</h2>
-                Pola oznaczone "*" są wymagane
-                <p className="form__field">
-            <label for="pln" className="form__label">PLN*:</label>
-            <input type="number"
-              className="form__input" name="pln" id="pln" step="0.01" min="0.05"
-              max="9999999999" value="" required />
-          </p>
-          <button className="form__button">Przelicz</button>
-        </form>
+      <Main className="main">
+        <Form />
         <List />
       </Main>
       <Footer footerContent="Copyright &copy; Paweł Suchy 2021" />
