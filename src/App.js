@@ -1,6 +1,7 @@
 import './App.css';
 import Header from "./Header";
 import Main from "./Main";
+import List from "./List";
 
 function App() {
   return (
@@ -18,11 +19,7 @@ function App() {
           </p>
           <button className="form__button">Przelicz</button>
         </form>
-        <ul className="currencyList">
-          <li className="currencyList__item">EUR: <span className="currencyList__span">---</span></li>
-          <li className="currencyList__item">USD: <span className="currencyList__span">---</span></li>
-          <li className="currencyList__item">CHF: <span className="currencyList__span">---</span></li>
-        </ul>
+        <List />
       </Main>
       <footer className="footer">Copyright &copy; Paweł Suchy 2021
     </footer>
