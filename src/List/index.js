@@ -7,8 +7,9 @@ const List = ({ currencies, result }) => (
                 key={currency.id}
                 className="list__item"
             >
-                {currency.currencyName}: <span className="list__span">{result.toFixed(2)}</span>
-                <span className="list__span list__span--range">Kurs: {currency.currencyValue}</span>
+                {currency.currencyName}:
+                <span className="list__span list__span--range">Kurs: {currency.currencyValue} PLN</span>
+                <span className="list__span">Wartość: {result.toFixed(2)} PLN</span>
             </li>
         ))}
     </ul>
