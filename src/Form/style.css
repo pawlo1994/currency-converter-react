@@ -45,4 +45,15 @@
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #000;
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+
+.form__button:hover {
+    background-color: #eee;
+}
+
+.form__button:active {
+    background-color: #333;
+    color: #eee;
 }
