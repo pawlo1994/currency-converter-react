@@ -1,8 +1,6 @@
 import './App.css';
-import { useState } from "react";
 import Header from "./Header";
 import Main from "./Main";
-import List from "./List";
 import Footer from "./Footer";
 import Form from "./Form";
 
@@ -25,17 +23,12 @@ const currencies = [
 ];
 
 function App() {
-  const [userValue, setUserValue] = useState(1);
   return (
     <>
       <Header headerContent="Suchy kantor" />
       <Main className="main">
         <Form
           currencies={currencies}
-        />
-        <List
-          currencies={currencies}
-          userValue={userValue}
         />
       </Main>
       <Footer footerContent="Copyright &copy; Paweł Suchy 2021" />
