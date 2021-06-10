@@ -1,25 +1,15 @@
 import "./style.css";
 
-const List = () => (
+const List = ({ currencies, userValue }) => (
     <ul className="list">
-        <li
-            key="1"
-            className="list__item"
-        >
-            EUR: <span className="list__span">---</span>
-        </li>
-        <li
-            key="2"
-            className="list__item"
-        >
-            USD: <span className="list__span">---</span>
-        </li>
-        <li
-            key="3"
-            className="list__item"
-        >
-            CHF: <span className="list__span">---</span>
-        </li>
+        {currencies.map(currency => (
+            <li
+                key={currency.id}
+                className="list__item"
+            >
+                {currency.currencyName}: <span className="list__span">{currency.currencyValue.toFixed(2)}</span>
+            </li>
+        ))}
     </ul>
 );
 
