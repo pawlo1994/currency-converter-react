@@ -1,4 +1,6 @@
 # Currency Converter
+## Demo
+https://pawlo1994.github.io/currency-converter-react
 ## Description
 Simple Currency Converter App in React.js.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
