@@ -1,9 +1,10 @@
 .list {
     padding: 20px;
-    background-color: rgba(221, 221, 221, 0.507);
+    background-color: rgb(221, 221, 221);
     border-radius: 10px;
+    box-shadow: 0 0 2px 2px #999;
     list-style-type: none;
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 
 @media(max-width: 767px) {
@@ -18,12 +19,13 @@
 
 .list__span {
     display: inline-block;
+    background-color: #ccc;
+    text-align: center;
     width: 100%;
-    text-align: right;
+    padding: 5px;
 }
 
 .list__span--range {
     background-color: #eee;
-    text-align: center;
     margin-bottom: 10px;
 }
