@@ -4,9 +4,11 @@ import List from "../List";
 
 
 const Form = ({ currencies }) => {
-    const [userValue, setUserValue] = useState(1);
+    const [userValue, setUserValue] = useState("");
+    const [result, setResult] = useState(+userValue);
     const onFormSubmit = event => {
         event.preventDefault();
+        currencies.map(currency => setResult(() => (userValue / currency.currencyValue)));
     };
 
     return (
@@ -37,6 +39,7 @@ const Form = ({ currencies }) => {
             <List
                 currencies={currencies}
                 userValue={userValue}
+                result={result}
             />
         </>
     );
