@@ -2,7 +2,8 @@
     padding: 20px;
     border-radius: 10px;
     flex-basis: 50%;
-    background-color: rgba(204, 204, 204, 0.507);
+    background-color: rgb(204, 204, 204);
+    box-shadow: 0 0 2px 2px #666;
 }
 
 @media(max-width: 767px) {
@@ -41,7 +42,7 @@
     width: 100px;
     padding: 10px;
     margin: 10px auto;
-    background-color: #ccc;
+    background-color: #eee;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px #000;
@@ -50,7 +51,7 @@
 }
 
 .form__button:hover {
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .form__button:active {
