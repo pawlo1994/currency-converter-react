@@ -12,6 +12,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. CSS
 5. HTML
 6. BEM
+
+## How to use
+1. Write your amount in "PLN" field.
+![Input amount gif](public/input.gif)
+2. Then click on "Przelicz" button.
+![convert gif](public/convert.gif)
 ## Available Scripts
 
 In the project directory, you can run:
