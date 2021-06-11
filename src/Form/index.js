@@ -2,13 +2,19 @@ import "./style.css";
 import { useState } from "react";
 import List from "../List";
 
-
 const Form = ({ currencies }) => {
+    let results;
     const [userValue, setUserValue] = useState("");
-    const [result, setResult] = useState(+userValue);
+    const [plnValue, setPlnValue] = useState("");
+
     const onFormSubmit = event => {
         event.preventDefault();
-        currencies.map(currency => setResult(() => (userValue / currency.currencyValue)));
+        results = currencies.map(({ result, value }) => result = (userValue / value).toFixed(2));
+        for (let i = 0; i <= 2; i++) {
+            currencies[i].result = results[i];
+        };
+        setPlnValue(+userValue);
+        setUserValue("");
     };
 
     return (
@@ -19,7 +25,7 @@ const Form = ({ currencies }) => {
             >
                 <h2 className="form__header">Przelicznik walut</h2>
                 Pola oznaczone "*" są wymagane
-            <p className="form__field">
+                <p className="form__field">
                     <label htmlFor="pln" className="form__label">PLN*:</label>
                     <input
                         type="number"
@@ -38,8 +44,8 @@ const Form = ({ currencies }) => {
             </form>
             <List
                 currencies={currencies}
-                userValue={userValue}
-                result={result}
+                results={results}
+                plnValue={plnValue}
             />
         </>
     );
