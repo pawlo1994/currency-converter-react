@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     setClockContent(date.toLocaleString());
-  });
+  }, [date]);
 
   setTimeout(() => {
     setInterval(() => {
