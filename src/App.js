@@ -28,23 +28,10 @@ function App() {
     },
   ];
 
-  const [date, setDate] = useState(new Date());
-  const [clockContent, setClockContent] = useState(date.toLocaleString());
-
-  useEffect(() => {
-    setClockContent(date.toLocaleString());
-  }, [date]);
-
-  setTimeout(() => {
-    setInterval(() => {
-      setDate(new Date());
-    }, 1000)
-  }, 0);
-
   return (
     <>
       <Header headerContent="Suchy kantor" />
-      <Clock clockContent={clockContent} />
+      <Clock />
       <Main className="main">
         <Form
           currencies={currencies}
