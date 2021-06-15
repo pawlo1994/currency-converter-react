@@ -1,8 +1,10 @@
 import './App.css';
+import { useEffect, useState } from "react";
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import Form from "./Form";
+import Clock from "./Clock";
 
 function App() {
   const currencies = [
@@ -26,9 +28,23 @@ function App() {
     },
   ];
 
+  const [date, setDate] = useState(new Date());
+  const [clockContent, setClockContent] = useState(date.toLocaleString());
+
+  useEffect(() => {
+    setClockContent(date.toLocaleString());
+  });
+
+  setTimeout(() => {
+    setInterval(() => {
+      setDate(new Date());
+    }, 1000)
+  }, 0);
+
   return (
     <>
       <Header headerContent="Suchy kantor" />
+      <Clock clockContent={clockContent} />
       <Main className="main">
         <Form
           currencies={currencies}
