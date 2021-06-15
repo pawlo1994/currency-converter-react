@@ -3,6 +3,7 @@
 https://pawlo1994.github.io/currency-converter-react
 ## Description
 Simple Currency Converter App in React.js.
+Now this app shows date and time.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Used technologies
