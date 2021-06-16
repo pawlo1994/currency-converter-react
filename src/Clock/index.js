@@ -6,7 +6,14 @@ const Clock = () => {
     const [clockContent, setClockContent] = useState(date.toLocaleString());
 
     useEffect(() => {
-        setClockContent(date.toLocaleString());
+        setClockContent(date.toLocaleString("pl", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit"
+        }));
     }, [date]);
 
     setTimeout(() => {
