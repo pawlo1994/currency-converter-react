@@ -13,7 +13,8 @@ const Clock = () => {
             hour: "2-digit",
             minute: "2-digit",
             second: "2-digit"
-        }));
+        }
+        ));
     }, [date]);
 
     setTimeout(() => {
@@ -21,7 +22,7 @@ const Clock = () => {
             setDate(new Date());
         }, 1000)
     }, 0);
-    return (<p className="clock">Dzisiaj jest&nbsp;{clockContent} </p>)
+    return (<p className="clock">Dzisiaj jest {clockContent} </p>)
 };
 
 export default Clock;
