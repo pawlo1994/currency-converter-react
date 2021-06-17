@@ -23,6 +23,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![Input amount gif](src/images/input.gif)
 2. Then click on "Przelicz" button.
 ![convert gif](src/images/convert.gif)
+
+## Easter Egg
+If you write some round amount in "PLN" field, you can see something special.
 ## Available Scripts
 
 In the project directory, you can run:
