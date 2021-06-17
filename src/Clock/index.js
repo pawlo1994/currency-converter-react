@@ -20,8 +20,9 @@ const Clock = () => {
     setTimeout(() => {
         setInterval(() => {
             setDate(new Date());
-        }, 1000)
+        }, 1000);
     }, 0);
+
     return (<p className="clock">Dzisiaj jest {clockContent} </p>)
 };
 
