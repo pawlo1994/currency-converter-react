@@ -6,6 +6,7 @@ import Form from "./Form";
 import Clock from "./Clock";
 
 function App() {
+
   const currencies = [
     {
       id: 1,
@@ -31,10 +32,8 @@ function App() {
     <>
       <Header headerContent="Suchy kantor" />
       <Clock />
-      <Main className="main">
-        <Form
-          currencies={currencies}
-        />
+      <Main>
+        <Form currencies={currencies} />
       </Main>
       <Footer footerContent="Copyright &copy; Paweł Suchy 2021" />
     </>
