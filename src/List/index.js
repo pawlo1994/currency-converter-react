@@ -2,7 +2,7 @@ import "./style.css";
 
 const List = ({ currencies, plnValue }) => {
     return (
-        <ul className="list">
+        <ul className={plnValue >= 1000000 ? "list list--januszed" : "list"}>
             <li className="list__item">PLN:
                 <span className="list__span">Wartość: {plnValue} PLN</span>
             </li>
