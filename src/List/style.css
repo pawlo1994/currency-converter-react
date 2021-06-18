@@ -16,7 +16,7 @@
 .list--januszed {
     background-size: cover;
     background-position: center center;
-    background-image: url("/images/Background_januszed.jpg");
+    background-image: url("Background_januszed.jpg");
 }
 
 .list__item {
