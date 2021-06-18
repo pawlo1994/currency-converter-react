@@ -6,7 +6,7 @@ Simple Currency Converter App in React.js.
 
 Now this app shows date and time.
 
-![clock gif](src/images/clock.gif)
+![clock gif](images/clock.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -20,9 +20,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## How to use
 1. Write your amount in "PLN" field.
-![Input amount gif](src/images/input.gif)
+![Input amount gif](images/input.gif)
 2. Then click on "Przelicz" button.
-![convert gif](src/images/convert.gif)
+![convert gif](images/convert.gif)
 
 ## Easter Egg
 If you write some round amount in "PLN" field, you can see something special.
