@@ -1,8 +1,6 @@
 .clock {
     font-size: 14px;
     font-family: 'PT mono', monospace;
-    max-width: 1024px;
-    width: 100%;
     margin: 0 auto;
     padding: 5px 10px;
     text-align: right;
