@@ -13,7 +13,7 @@ const Form = ({ currencies }) => {
         for (let i = 0; i <= 2; i++) {
             currencies[i].result = results[i];
         };
-        setPlnValue(+userValue);
+        setPlnValue((+userValue).toFixed(2));
         setUserValue("");
     };
 
