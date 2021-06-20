@@ -3,6 +3,7 @@ import Main from "./Main";
 import Footer from "./Footer";
 import Form from "./Form";
 import Clock from "./Clock";
+import Container from "./Container";
 
 function App() {
 
@@ -29,12 +30,14 @@ function App() {
 
   return (
     <>
-      <Header headerContent="Suchy kantor" />
-      <Clock />
-      <Main>
-        <Form currencies={currencies} />
-      </Main>
-      <Footer footerContent="Copyright &copy; Paweł Suchy 2021" />
+      <Container>
+        <Header headerContent="Suchy kantor" />
+        <Clock />
+        <Main>
+          <Form currencies={currencies} />
+        </Main>
+        <Footer footerContent="Copyright &copy; Paweł Suchy 2021" />
+      </Container>
     </>
   );
 }
