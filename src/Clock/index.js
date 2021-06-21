@@ -20,7 +20,7 @@ const Clock = () => {
         return () => {
             clearInterval(intervalId);
         };
-    }, [date]);
+    });
 
     return (
         <p className="clock">
