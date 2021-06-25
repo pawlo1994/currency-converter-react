@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledClock } from "./styled";
 import { useState, useEffect } from "react";
 
 const Clock = () => {
@@ -23,9 +23,9 @@ const Clock = () => {
     });
 
     return (
-        <p className="clock">
+        <StyledClock>
             Dzisiaj jest {dateContent}
-        </p>)
+        </StyledClock>)
 };
 
 export default Clock;

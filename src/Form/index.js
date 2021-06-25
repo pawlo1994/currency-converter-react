@@ -1,4 +1,4 @@
-import "./style.css";
+import { StyledForm, StyledLabel, StyledInput, StyledField, StyledButton, StyledHeader } from "./styled";
 import { useState } from "react";
 import List from "../List";
 
@@ -19,17 +19,15 @@ const Form = ({ currencies }) => {
 
     return (
         <>
-            <form
-                className="form"
+            <StyledForm
                 onSubmit={onFormSubmit}
             >
-                <h2 className="form__header">Przelicznik walut</h2>
+                <StyledHeader>Przelicznik walut</StyledHeader>
                 Pola oznaczone "*" są wymagane
-                <p className="form__field">
-                    <label htmlFor="pln" className="form__label">PLN*:</label>
-                    <input
+                <StyledField>
+                    <StyledLabel htmlFor="pln">PLN*:</StyledLabel>
+                    <StyledInput
                         type="number"
-                        className="form__input"
                         value={userValue}
                         onChange={({ target }) => setUserValue(target.value)}
                         name="pln"
@@ -39,9 +37,9 @@ const Form = ({ currencies }) => {
                         max="9999999999"
                         required
                     />
-                </p>
-                <button className="form__button">Przelicz</button>
-            </form>
+                </StyledField>
+                <StyledButton>Przelicz</StyledButton>
+            </StyledForm>
             <List
                 currencies={currencies}
                 results={results}
