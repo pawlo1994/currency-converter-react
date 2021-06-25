@@ -1,22 +1,21 @@
-import "./style.css";
+import { StyledList, StyledItem, StyledSpan } from "./styled";
 
 const List = ({ currencies, plnValue }) => {
     return (
-        <ul className={`list ${plnValue >= 1000000 ? "list--januszed" : ""}`}>
-            <li className="list__item">PLN:
-                <span className="list__span">Wartość: {plnValue} PLN</span>
-            </li>
+        <StyledList januszed={plnValue >= 1000000}>
+            <StyledItem>PLN:
+                <StyledSpan>Wartość: {plnValue} PLN</StyledSpan>
+            </StyledItem>
             {currencies.map(currency => (
-                <li
+                <StyledItem
                     key={currency.id}
-                    className="list__item"
                 >
                     {currency.name}:
-                    <span className="list__span list__span--range">Kurs: {currency.value} PLN</span>
-                    <span className="list__span">Wartość: {currency.result} {currency.name}</span>
-                </li>
+                    <StyledSpan range>Kurs: {currency.value} PLN</StyledSpan>
+                    <StyledSpan>Wartość: {currency.result} {currency.name}</StyledSpan>
+                </StyledItem>
             ))}
-        </ul>
+        </StyledList>
     );
 };
 
