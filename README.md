@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. Create-react-app
 4. CSS
 5. HTML
-6. BEM
+6. Styled components
 
 ## How to use
 1. Write your amount in "PLN" field.
