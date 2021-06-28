@@ -32,7 +32,7 @@ export const StyledSpan = styled.span`
     padding: 5px;
 
     ${({ range }) => range && css`
-        background-color: rgba(66, 66, 66, 0.5);
+        background-color: ${({ theme }) => theme.mainColor};
         color: #fff;
         margin-bottom: 10px;
     `};

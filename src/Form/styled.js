@@ -42,7 +42,7 @@ export const StyledButton = styled.button`
     width: 100px;
     padding: 10px;
     margin: 10px auto;
-    background-color: #333;
+    background-color: ${({ theme }) => theme.mainColor};
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -56,7 +56,7 @@ export const StyledButton = styled.button`
 
     &:active{
         background-color: #fff;
-        color: #333;
+        color: ${({ theme }) => theme.mainColor};
     }
 `;
 

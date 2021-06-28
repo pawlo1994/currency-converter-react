@@ -1,6 +1,8 @@
 import { StyledForm, StyledLabel, StyledInput, StyledField, StyledButton, StyledHeader } from "./styled";
 import { useState } from "react";
 import List from "../List";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../theme";
 
 const Form = ({ currencies }) => {
     let results;
@@ -18,7 +20,7 @@ const Form = ({ currencies }) => {
     };
 
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <StyledForm
                 onSubmit={onFormSubmit}
             >
@@ -45,7 +47,7 @@ const Form = ({ currencies }) => {
                 results={results}
                 plnValue={plnValue}
             />
-        </>
+        </ThemeProvider>
     );
 };
 
