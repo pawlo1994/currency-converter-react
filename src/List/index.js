@@ -5,7 +5,7 @@ import { theme } from "../theme";
 const List = ({ currencies, plnValue }) => {
     return (
         <ThemeProvider theme={theme}>
-            <StyledList januszed={plnValue >= 1000000}>
+            <StyledList>
                 <StyledItem>PLN:
                     <StyledSpan>Wartość: {plnValue} PLN</StyledSpan>
                 </StyledItem>
@@ -14,7 +14,7 @@ const List = ({ currencies, plnValue }) => {
                         key={currency.id}
                     >
                         {currency.name}:
-                        <StyledSpan range>Kurs: {currency.value} PLN</StyledSpan>
+                        <StyledSpan currencyRate>Kurs: {currency.value} PLN</StyledSpan>
                         <StyledSpan>Wartość: {currency.result} {currency.name}</StyledSpan>
                     </StyledItem>
                 ))}

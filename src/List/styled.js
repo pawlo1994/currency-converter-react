@@ -9,12 +9,6 @@ export const StyledList = styled.ul`
     list-style-type: none;
     flex-basis: 45%;
 
-    ${({ januszed }) => januszed && css`
-        background-size: cover;
-        background-position: center center;
-        background-image: url(${Background});
-    `};
-
     @media(max-width: 767px){
         flex-basis: 100%;
     }
@@ -31,7 +25,7 @@ export const StyledSpan = styled.span`
     width: 100%;
     padding: 5px;
 
-    ${({ range }) => range && css`
+    ${({ currencyRate }) => currencyRate && css`
         background-color: ${({ theme }) => theme.mainColor};
         color: #fff;
         margin-bottom: 10px;
