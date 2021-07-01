@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import Background from "./Background_januszed.jpg"
 
 export const StyledList = styled.ul`
     padding: 20px;
